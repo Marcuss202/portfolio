@@ -1,0 +1,21 @@
+.NavBar .container {
+    align-items: center;
+}
+
+.NavBar .row {
+    margin: 20px;
+}
+
+.NavBar a:hover {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.NavBar .navNest a {
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}

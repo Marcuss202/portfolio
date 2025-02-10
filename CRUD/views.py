@@ -82,25 +82,3 @@ def details(request, table_name, pk):
 
     except Exception as e:
         return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-# @api_view(['GET', 'PUT', 'DELETE'])
-# def task_detail(request, pk):
-#     try:
-#         tasks = ProgrammingSkills.objects.get(pk=pk)
-#     except ProgrammingSkills.DoesNotExist:
-#         return Response(status=status.HTTP_404_NOT_FOUND)
-    
-#     if request.method == 'GET':
-#         serializer = TaskSerializer(tasks)
-#         return Response(serializer.data, status=status.HTTP_200_OK)
-    
-#     elif request.method == 'PUT':
-#         serializer = TaskSerializer(tasks, data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#         return Response(serializer.data, status=status.HTTP_200_OK)
-    
-#     elif request.method == 'DELETE':
-#         tasks.delete()
-#         return Response(status=status.HTTP_204_NO_CONTENT)
-
