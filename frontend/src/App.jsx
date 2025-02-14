@@ -6,6 +6,7 @@ import About from './Pages/About.jsx'
 import Projects from './Pages/Projects.jsx'
 import Portfolio from './Pages/Portfolio.jsx'
 import Contact from './Pages/Contacts.jsx'
+import ProjectDetail from './components/ProjectDetail.jsx'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contacts" element={<Contact />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
         </Routes>
       </BrowserRouter>
     </>

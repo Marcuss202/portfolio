@@ -73,7 +73,7 @@ const Contacts = () => {
                 className="form-control mb-3"
                 rows="4"
                 ></textarea>
-                <button type="submit" className="btn btn-primary w-100">Send Message</button>
+                <button type="submit" className="btn mainButton w-100">Send Message</button>
             </form>
 
             {isSent && <p className="text-success mt-2">Message sent successfully!</p>}

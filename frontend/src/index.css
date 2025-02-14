@@ -1,19 +1,49 @@
 * {
   /* background-color: #101010; */
   color: #FFFFFF;
-  font-family: JetBrains Mono, sans-serif;
+  font-family: "Crimson Text", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-a {
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lalezar, sans-serif;
+}
+
+.NavBar a {
   font-size: 14px;
+}
+
+.MyNameButton {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-shadow: none;
+  transition: text-shadow 0.3s;
+}
+
+.MyNameButton:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-shadow: 0 0 15px #D4A373;
+}
+
+
+.details a {
+  text-decoration: none;
+  color: #D4A373;
+}
+
+button {
+  font-family: JetBrains Mono, sans-serif !important;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .mainButton {
   background-color:#1E3A8A !important;
   color: white !important;
+  font-family: JetBrains Mono, sans-serif !important;
 }
 
 .mainButton:hover {
@@ -27,6 +57,7 @@ a {
   100% { background-position: 50% 50%; }
 }
 
+
 body {
   background: radial-gradient(circle, #222222, #101010, #080808);
   background-size: 200% 200%;
@@ -35,7 +66,7 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  grid-template-columns: repeat(2, 1fr); /* cards per row */
   gap: 25px; /* Space between cards */
   max-width: 900px; /* Optional: Set a max width for the container */
   margin: 0 auto; /* Center the container */

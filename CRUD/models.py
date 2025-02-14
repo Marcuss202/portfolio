@@ -13,10 +13,10 @@ class ProgrammingSkills(models.Model):
 
 class PersonalProjects(models.Model):
     title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images/')
     description = models.TextField(blank=True, null=True)
-    tech_stack = models.CharField(max_length=255, blank=True, null=True)
+    Html_desc = models.TextField(blank=True, null=True)
     github_link = models.CharField(max_length=255, blank=True, null=True)
-    live_demo_link = models.CharField(max_length=255, blank=True, null=True)
     created_at = models.DateTimeField(blank=True, null=True)
 
     class Meta:

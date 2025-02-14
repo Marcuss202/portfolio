@@ -2,23 +2,36 @@ import React from 'react';
 import './CSS/ProjectCard.css'; // Import the CSS for the card
 
 const ProjectCard = ({ project }) => {
-  return (
+    const imgUrl = `http://127.0.0.1:8000${project.image}`;
+
+    const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}/${month}/${day}`;
+    };
+
+    const formattedDate = formatDate(project.created_at);
+    const shortDescription = project.description.substring(0, 100) + '...';
+
+return (
     <>
     <div className="Card">
-        <div className="ProjectCard">
-            <img src={project.image} alt={project.title} className="projectImage" />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-        </div>
+            <div className="ProjectCard" onClick={() => window.location.href = `/projects/${project.id}`}>
+                    <div className="row">
+                            <img src={imgUrl} alt={project.title} className="projectImage" />
+                    </div>
+                    <div className="row ps-4 pt-3 pr-3">
+                            <div className="col-6 text-start">test</div>
+                            <div className="col-6 date text-end"><p>{formattedDate}</p></div>
+                    </div>
+                    <h3 className='text-start pl-4 text-uppercase'>{project.title}</h3>
+                    <p className='description text-start pl-4'>{shortDescription}</p>
+            </div>
     </div>
-        {/* <div className="project-card">
-            
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={`/projects/${project.id}`} className="view-details">View Details</a>
-        </div> */}
     </>
-  );
+);
 };
 
 export default ProjectCard;

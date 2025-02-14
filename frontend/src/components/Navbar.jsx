@@ -1,5 +1,6 @@
 import "./CSS/Navbar.css"
 import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -7,7 +8,9 @@ function Navbar() {
             <div className="NavBar">
                 <div className="row 100vw align-items-center text-center justify-content-center">
                     <div className="col-3 myName text-end">
-                        <h4>Markuss Ozols</h4>
+                        <Link to="/" className="MyNameButton text-decoration-none">
+                            <h4>Markuss Ozols</h4>
+                        </Link>
                     </div>
                     <Nav className="col-6 navNest justify-content-center" defaultActiveKey="/home" as="ul">
                         <Nav.Item as="li">
@@ -26,7 +29,7 @@ function Navbar() {
                             <Nav.Link href="/contacts/">Contact me</Nav.Link>
                         </Nav.Item>
                     </Nav>
-                    <div className="col-3 languageChange d-flex text-center">
+                    <div className="col-3 languageChange d-flex text-center align-items-center">
                         <p className="">Latvian</p>
                     </div>
                 </div>

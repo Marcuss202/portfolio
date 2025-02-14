@@ -39,8 +39,10 @@ const Projects = () => {
     return (
     <>
         <Navbar />
-        <div className="Projects container">
-            <h1>My Projects</h1>
+        <div className="Projects container text-center mt-5">
+            <h2 className="mb-3">Projects</h2>
+            <p>These are the projects I have done!</p>
+
             <div className="project-grid">
               {projects.map((project) => (
                   <ProjectCard key={project.id} project={project} /> // Use the ProjectCard component

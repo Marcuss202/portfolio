@@ -10,7 +10,7 @@ function About() {
                 <div className="row">
                     <div className="col-md-6 d-flex align-items-center">
                     <img
-                        src="../public/MarkussOzolsAbout.jpeg"
+                        src="../MarkussOzolsAbout.jpeg"
                         alt="Profile"
                         className="img-fluid shadow "
                     />
