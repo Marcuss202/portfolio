@@ -1,5 +1,5 @@
 * {
-  background-color: #101010;
+  /* background-color: #101010; */
   color: #FFFFFF;
   font-family: JetBrains Mono, sans-serif;
   box-sizing: border-box;
@@ -9,4 +9,35 @@
 
 a {
   font-size: 14px;
+}
+
+.mainButton {
+  background-color:#1E3A8A !important;
+  color: white !important;
+}
+
+.mainButton:hover {
+  background-color:#264cb4 !important;
+  font-weight: bold;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 50% 50%; }
+  50% { background-position: 60% 40%; }
+  100% { background-position: 50% 50%; }
+}
+
+body {
+  background: radial-gradient(circle, #222222, #101010, #080808);
+  background-size: 200% 200%;
+  animation: gradientAnimation 30s ease-in-out infinite;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 25px; /* Space between cards */
+  max-width: 900px; /* Optional: Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 15px;
 }

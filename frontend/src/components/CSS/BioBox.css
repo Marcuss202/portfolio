@@ -1,19 +1,57 @@
-.BioBox .wrapper{
+.BioBox * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    background-color: #1e1e1e;
+}
+
+.BioBox .wrapper {
     border: 2px solid #515151;
+    background-color: #1e1e1e;
     border-radius: 12px;
     min-width: 500px;
     width: 50%;
+    height: auto;
     margin: 0 auto;
-    
 }
 
-.BioBox .wrapper div, .wrapper h3 {
-    /* background-color: #1e1e1e; */
+.BioBox .description {
+    font-family: "Crimson Text", sans-serif;
+    font-size: 150%;
+    line-height: 25px;
+    padding-top: 15px;
 }
 
 .BioBox h3 {
-    font-family: Lalezar, sans-serif;
+    font-family: "Lalezar", sans-serif;
+    font-size: 250%;
+    margin-top: 15px;
+    line-height: 20px;
 }
 
+.BioBox .contacts {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #515151;
+    border-radius: 12px;
+}
 
+.BioBox .emailBio, .BioBox .location {
+    color: #ACACAC;
+    font-family: "Crimson Text", sans-serif;
+    font-size: 100%;
+}
+
+.BioBox .emailWrapper:hover *, .BioBox .emailBioSvg:hover g path {
+    color: #dfdfdf;
+    cursor: pointer;
+    fill: #dfdfdf;
+}
+
+.BioBox .visible {
+    display: block;
+}
+
+.BioBox .notVisible {
+    display: none;
+}

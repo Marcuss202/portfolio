@@ -1,0 +1,13 @@
+.Contacts .contact-form {
+    max-width: 400px;
+  }
+  
+.Contacts .social-icons a {
+    color: #1e3a8a;
+    transition: transform 0.2s;
+  }
+  
+.Contacts .social-icons a:hover {
+    transform: scale(1.1);
+    color: #0d6efd;
+  }
