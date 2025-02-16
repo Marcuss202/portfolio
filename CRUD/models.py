@@ -18,11 +18,26 @@ class PersonalProjects(models.Model):
     Html_desc = models.TextField(blank=True, null=True)
     github_link = models.CharField(max_length=255, blank=True, null=True)
     created_at = models.DateTimeField(blank=True, null=True)
+    orderNumber = models.IntegerField()
 
     class Meta:
         managed = False
         db_table = 'personal_projects'
     
+
+    def __str__(self):
+        return self.title
+    
+class ExperienceMap(models.Model):
+    topText = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
+    period = models.CharField(max_length=255)
+    description = models.TextField(blank=True, null=True)
+    orderNumber = models.IntegerField()
+
+    class Meta:
+        managed = False
+        db_table = 'experience_map'
 
     def __str__(self):
         return self.title

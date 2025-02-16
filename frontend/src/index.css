@@ -72,3 +72,11 @@ body {
   margin: 0 auto; /* Center the container */
   padding: 15px;
 }
+
+.experience-wrapper {
+  min-width: 500px;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 0 0 25px;
+}

@@ -4,12 +4,12 @@ from django.apps import apps
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from .models import ProgrammingSkills, PersonalProjects
-from .serializers import SkillsSerializer, PersonalSerializer
+from .serializers import SkillsSerializer, PersonalSerializer, ExperienceSerializer
 
 SERIALIZER_MAPPING = {
     'ProgrammingSkills': SkillsSerializer,
     'PersonalProjects': PersonalSerializer,
+    'ExperienceMap': ExperienceSerializer,
 }
 
 @api_view(['GET'])
