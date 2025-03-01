@@ -1,7 +1,6 @@
 import Navbar from '../components/Navbar.jsx'
 import ProjectCard from '../components/ProjectCard.jsx'
 import React, { useEffect, useState } from 'react'
-import { BASE_URL } from '../App.jsx';
 
 
 const Projects = () => {

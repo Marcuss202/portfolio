@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar.jsx'
 import ExperienceMap from '../components/ExperienceMap.jsx'
 import SkillCard from '../components/SkillCard.jsx'
 import React, { useEffect, useState } from 'react'
-import { BASE_URL } from '../App.jsx'; 
 
 
 

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar.jsx'
 import { useParams } from 'react-router-dom';
 import './CSS/ProjectDetail.css';
-import { BASE_URL } from '../App.jsx'; 
 
 const ProjectDetail = () => {
     const { id } = useParams(); // Get the project ID from the URL

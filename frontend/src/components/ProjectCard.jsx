@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSS/ProjectCard.css'; // Import the CSS for the card
-import { BASE_URL } from '../App.jsx'; 
 
 const ProjectCard = ({ project }) => {
     const imgUrl = `https://markuss.onrender.com/${project.image}`;

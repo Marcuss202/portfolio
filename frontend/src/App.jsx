@@ -8,7 +8,6 @@ import Portfolio from './Pages/Portfolio.jsx'
 import Contact from './Pages/Contacts.jsx'
 import ProjectDetail from './components/ProjectDetail.jsx'
 
-BASE_URL = "https://markuss.onrender.com"
 
 function App() {
 
