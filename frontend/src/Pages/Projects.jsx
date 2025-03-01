@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar.jsx'
 import ProjectCard from '../components/ProjectCard.jsx'
 import React, { useEffect, useState } from 'react'
+import { BASE_URL } from '../App.jsx';
 
 
 const Projects = () => {
@@ -11,7 +12,7 @@ const Projects = () => {
   useEffect(() => {
           const fetchExperiences = async () => {
             try {
-              const response = await fetch('http://127.0.0.1:8000/PersonalProjects/');
+              const response = await fetch(`${BASE_URL}/PersonalProjects/`);
               if (!response.ok) {
                 throw new Error('Network response was not ok');
               }

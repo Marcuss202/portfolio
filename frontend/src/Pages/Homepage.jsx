@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar.jsx'
 import ExperienceMap from '../components/ExperienceMap.jsx'
 import SkillCard from '../components/SkillCard.jsx'
 import React, { useEffect, useState } from 'react'
+import { BASE_URL } from '../App.jsx'; 
 
 
 
@@ -16,7 +17,7 @@ function Homepage() {
       useEffect(() => {
         const fetchExperiences = async () => {
           try {
-            const response = await fetch('http://127.0.0.1:8000/ExperienceMap/');
+            const response = await fetch(`${BASE_URL}/ExperienceMap/`);
             if (!response.ok) {
               throw new Error('Network response was not ok');
             }
@@ -34,7 +35,7 @@ function Homepage() {
 
         const fetchSkills = async () => {
           try {
-            const response = await fetch('http://127.0.0.1:8000/ProgrammingSkills/');
+            const response = await fetch(`${BASE_URL}/ProgrammingSkills/`);
             if (!response.ok) {
               throw new Error('Network response was not ok');
             }

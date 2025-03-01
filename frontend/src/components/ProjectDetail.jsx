@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar.jsx'
 import { useParams } from 'react-router-dom';
 import './CSS/ProjectDetail.css';
+import { BASE_URL } from '../App.jsx'; 
 
 const ProjectDetail = () => {
     const { id } = useParams(); // Get the project ID from the URL
@@ -19,7 +20,7 @@ const ProjectDetail = () => {
     useEffect(() => {
         const fetchProject = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:8000/PersonalProjects/${id}/`); // Adjust the URL as needed
+                const response = await fetch(`${BASE_URL}/PersonalProjects/${id}/`); // Adjust the URL as needed
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

@@ -1,8 +1,9 @@
 import React from 'react';
 import './CSS/ProjectCard.css'; // Import the CSS for the card
+import { BASE_URL } from '../App.jsx'; 
 
 const ProjectCard = ({ project }) => {
-    const imgUrl = `http://127.0.0.1:8000${project.image}`;
+    const imgUrl = `${BASE_URL}${project.image}`;
 
     const formatDate = (dateString) => {
         const date = new Date(dateString);
