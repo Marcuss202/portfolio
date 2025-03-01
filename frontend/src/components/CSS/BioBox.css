@@ -12,12 +12,13 @@
     min-width: 500px;
     width: 50%;
     height: auto;
+    min-height: 170px;
     margin: 0 auto;
 }
 
 .BioBox .description {
     font-family: "Crimson Text", sans-serif;
-    font-size: 150%;
+    font-size: 20px;
     line-height: 25px;
     padding-top: 15px;
 }
