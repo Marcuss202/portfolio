@@ -17,7 +17,7 @@ function Homepage() {
       useEffect(() => {
         const fetchExperiences = async () => {
           try {
-            const response = await fetch(`${BASE_URL}/ExperienceMap/`);
+            const response = await fetch(`https://markuss.onrender.com/ExperienceMap/`);
             if (!response.ok) {
               throw new Error('Network response was not ok');
             }
@@ -35,7 +35,7 @@ function Homepage() {
 
         const fetchSkills = async () => {
           try {
-            const response = await fetch(`${BASE_URL}/ProgrammingSkills/`);
+            const response = await fetch(`https://markuss.onrender.com/ProgrammingSkills/`);
             if (!response.ok) {
               throw new Error('Network response was not ok');
             }

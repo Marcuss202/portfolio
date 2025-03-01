@@ -3,7 +3,7 @@ import './CSS/ProjectCard.css'; // Import the CSS for the card
 import { BASE_URL } from '../App.jsx'; 
 
 const ProjectCard = ({ project }) => {
-    const imgUrl = `${BASE_URL}${project.image}`;
+    const imgUrl = `https://markuss.onrender.com/${project.image}`;
 
     const formatDate = (dateString) => {
         const date = new Date(dateString);

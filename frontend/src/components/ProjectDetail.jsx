@@ -20,7 +20,7 @@ const ProjectDetail = () => {
     useEffect(() => {
         const fetchProject = async () => {
             try {
-                const response = await fetch(`${BASE_URL}/PersonalProjects/${id}/`); // Adjust the URL as needed
+                const response = await fetch(`https://markuss.onrender.com/PersonalProjects/${id}/`); // Adjust the URL as needed
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -55,7 +55,7 @@ const ProjectDetail = () => {
             <div className="details">
                 <div className="project-detail">
                     <section class="project-detail">
-                        <img src={`http://127.0.0.1:8000${project.image}`} alt={project.title} class="project-image" />
+                        <img src={`https://markuss.onrender.com/${project.image}`} alt={project.title} class="project-image" />
                         <div class="project-description">
                             <div className='text-end pt-2'><p>{formattedDate}</p></div>
                             <h2>{project.title}</h2>

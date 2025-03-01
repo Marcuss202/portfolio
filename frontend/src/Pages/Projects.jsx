@@ -12,7 +12,7 @@ const Projects = () => {
   useEffect(() => {
           const fetchExperiences = async () => {
             try {
-              const response = await fetch(`${BASE_URL}/PersonalProjects/`);
+              const response = await fetch(`https://markuss.onrender.com/PersonalProjects/`);
               if (!response.ok) {
                 throw new Error('Network response was not ok');
               }
