@@ -2,7 +2,7 @@ import React from 'react';
 import './CSS/ProjectCard.css'; // Import the CSS for the card
 
 const ProjectCard = ({ project }) => {
-    const imgUrl = `${process.env.REACT_APP_API_URL}/${project.image}`;
+    const imgUrl = `${process.env.VITE_API_URL}/${project.image}`;
 
     const formatDate = (dateString) => {
         const date = new Date(dateString);

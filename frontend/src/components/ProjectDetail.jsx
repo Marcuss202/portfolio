@@ -19,7 +19,7 @@ const ProjectDetail = () => {
     useEffect(() => {
         const fetchProject = async () => {
             try {
-                const response = await fetch(`${process.env.REACT_APP_API_URL}/${id}/`); // Adjust the URL as needed
+                const response = await fetch(`${process.env.VITE_API_URL}/${id}/`); // Adjust the URL as needed
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
