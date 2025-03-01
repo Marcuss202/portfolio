@@ -16,7 +16,7 @@ function Homepage() {
       useEffect(() => {
         const fetchExperiences = async () => {
           try {
-            const response = await fetch(`${process.env.VITE_API_URL}/ExperienceMap/`)
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/ExperienceMap/`)
                                       .then((res) => res.json())
                                       .then((data) => console.log("API Response:", data))
                                       .catch((error) => console.error("Fetch error:", error));
@@ -38,7 +38,7 @@ function Homepage() {
 
         const fetchSkills = async () => {
           try {
-            const response = await fetch(`${process.env.VITE_API_URL}/ProgrammingSkills/`)
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/ProgrammingSkills/`)
                                         .then((res) => res.json())
                                         .then((data) => console.log("API Response:", data))
                                         .catch((error) => console.error("Fetch error:", error));
