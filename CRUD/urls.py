@@ -1,6 +1,6 @@
 
 from django.urls import path
-from .views import getTasks, createObject, details, keep_awake
+from .views import getTasks, createObject, details
 
 urlpatterns = [
     path('<str:table_name>/', getTasks, name='getAnyTasks'),
