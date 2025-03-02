@@ -50,7 +50,7 @@ function Homepage() {
                 if (!data) {
                   throw new Error("Received null or undefined response from API");
                 }
-                setExperiences(data);
+                setSkills(data);
               })
               .catch((error) => {
                 console.error("Fetch error:", error);
