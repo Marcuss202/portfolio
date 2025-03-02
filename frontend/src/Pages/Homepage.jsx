@@ -77,7 +77,7 @@ function Homepage() {
         <>
             <Navbar />
             <BioBox />
-            <div className="experience-wrapper py-5">
+            <div className="experience-wrapper py-lg-5 pt-5 pb-2">
               <h2 className="mainText text-start ">Work Experience</h2>
             </div>
             <div className="Experience-map">

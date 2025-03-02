@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
 
 return (
     <>
-    <div className="Card">
+    <div className="Card d-flex justify-content-center">
             <div className="ProjectCard" onClick={() => window.location.href = `/projects/${project.id}`}>
                     <div className="row">
                             <img src={imgUrl} alt={project.title} className="projectImage" />

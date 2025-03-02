@@ -54,7 +54,7 @@ const ProjectDetail = () => {
             <div className="details">
                 <div className="project-detail">
                     <section class="project-detail">
-                        <img src={`https://markuss.onrender.com/${project.image}`} alt={project.title} class="project-image" />
+                        <img src={`${import.meta.env.VITE_API_URL}${project.image}`} alt={project.title} class="project-image" />
                         <div class="project-description">
                             <div className='text-end pt-2'><p>{formattedDate}</p></div>
                             <h2>{project.title}</h2>

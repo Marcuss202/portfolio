@@ -4,8 +4,8 @@ import React from 'react'
 function ExperienceMap( {experience} ) {
     return (
         <>
-            <div className="ExperienceMap ">
-                <div className="experience-wrapper">
+            <div className="ExperienceMap "> 
+                <div className="experience-wrapper pb-5 pb-xxl-0">
                     <div>
                         <div className="singleModuel d-flex ">
                             <div className="timelineRod d-flex flex-column mt-3">

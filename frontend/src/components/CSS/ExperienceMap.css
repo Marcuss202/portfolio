@@ -1,6 +1,6 @@
 
 
-.ExperienceMap .timeline-dot {
+.ExperienceMap .timeline-dot { 
     width: 2rem;
     height: 2rem;
     background-color: white;
@@ -22,12 +22,19 @@
 .ExperienceMap .timeline-line {
     width: 0.3rem;
     background-color: #FFFFFF;
-    height: 12rem;
+    height: 15rem;
     margin: 0 auto;
 }
 
+@media only screen and (min-width: 1200px) {
+    .ExperienceMap .timeline-line {
+        height: 12rem;
+    }
+    
+}
+
 h2, p{
-    margin-bottom: 0;
+    margin-bottom: 0; 
     line-height: 25px;
 }
 

@@ -16,7 +16,7 @@ function About() {
                     />
                     </div>
                     <div className="col-md-6">
-                    <h1 className="mb-3">About Me</h1>
+                    <h1 className="mb-3 mt-lg-0 mt-2">About Me</h1>
                     <p>
                         Hi, I'm Marcuss! I'm a full-stack developer passionate about
                         building web applications and exploring game development. I love

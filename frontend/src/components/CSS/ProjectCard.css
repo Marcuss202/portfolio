@@ -16,7 +16,7 @@
     cursor: pointer;
   }
 
-.Card .ProjectCard .row .projectImage {
+.Card .ProjectCard .row .projectImage { 
     height: auto;
     max-height: 210px;
     object-fit: cover;

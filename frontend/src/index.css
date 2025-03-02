@@ -54,7 +54,7 @@ button {
 @keyframes gradientAnimation {
   0% { background-position: 50% 50%; }
   50% { background-position: 60% 40%; }
-  100% { background-position: 50% 50%; }
+  100% { background-position: 50% 50%; } 
 }
 
 
@@ -66,11 +66,18 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* cards per row */
+  grid-template-columns: repeat(1, 1fr); /* cards per row */
   gap: 25px; /* Space between cards */
   max-width: 900px; /* Optional: Set a max width for the container */
   margin: 0 auto; /* Center the container */
   padding: 15px;
+}
+
+@media screen and (min-width: 1000px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
 }
 
 .experience-wrapper {
