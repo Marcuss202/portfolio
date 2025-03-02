@@ -17,20 +17,17 @@ function Homepage() {
         const fetchExperiences = async () => {
           try {
             const response = await fetch(`${import.meta.env.VITE_API_URL}/ExperienceMap/`)
-                                      .then((res) => res.json())
-                                      .then((data) => console.log("API Response:", data))
-                                      .catch((error) => console.error("Fetch error:", error));
-          
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            const data = await response.json();
-            // Sort the data in descending order by orderNumber
-            const sortedData = data.sort((a, b) => a.orderNumber - b.orderNumber);
-            setExperiences(sortedData);
-          } catch (error) {
-              console.error('There was a problem with the fetch operation:', error);
-              setError(error.message);
+              .then((res) => {
+                if (!res.ok) {
+                  throw new Error(`HTTP error! Status: ${res.status}`);
+                }
+                return res.json();
+              })
+              .then((data) => {
+                console.log("API Response:", data);
+              })
+              .catch((error) => console.error("Fetch error:", error));
+                setError(error.message);
           } finally {
               setLoading(false);
           }
@@ -39,19 +36,16 @@ function Homepage() {
         const fetchSkills = async () => {
           try {
             const response = await fetch(`${import.meta.env.VITE_API_URL}/ProgrammingSkills/`)
-                                        .then((res) => res.json())
-                                        .then((data) => console.log("API Response:", data))
-                                        .catch((error) => console.error("Fetch error:", error));
-          
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            const data = await response.json();
-            // Sort the data in descending order by orderNumber
-            const sortedData = data.sort((a, b) => a.id - b.id);
-            setSkills(sortedData);
-          } catch (error) {
-              console.error('There was a problem with the fetch operation:', error);
+            .then((res) => {
+              if (!res.ok) {
+                throw new Error(`HTTP error! Status: ${res.status}`);
+              }
+              return res.json();
+            })
+            .then((data) => {
+              console.log("API Response:", data);
+            })
+            .catch((error) => console.error("Fetch error:", error));
               setError(error.message);
           } finally {
               setLoading(false);
