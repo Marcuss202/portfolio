@@ -27,7 +27,7 @@ function Homepage() {
                 if (!data) {
                   throw new Error("Received null or undefined response from API");
                 }
-                console.log("API Response:", data);
+                setExperiences(data);
               })
               .catch((error) => {
                 console.error("Fetch error:", error);
@@ -50,7 +50,7 @@ function Homepage() {
                 if (!data) {
                   throw new Error("Received null or undefined response from API");
                 }
-                console.log("API Response:", data);
+                setExperiences(data);
               })
               .catch((error) => {
                 console.error("Fetch error:", error);
