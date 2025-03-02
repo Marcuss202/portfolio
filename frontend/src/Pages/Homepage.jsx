@@ -24,10 +24,14 @@ function Homepage() {
                 return res.json();
               })
               .then((data) => {
+                if (!data) {
+                  throw new Error("Received null or undefined response from API");
+                }
                 console.log("API Response:", data);
               })
-              .catch((error) => console.error("Fetch error:", error));
-                setError(error.message);
+              .catch((error) => {
+                console.error("Fetch error:", error);
+              });
           } finally {
               setLoading(false);
           }
@@ -36,17 +40,21 @@ function Homepage() {
         const fetchSkills = async () => {
           try {
             const response = await fetch(`${import.meta.env.VITE_API_URL}/ProgrammingSkills/`)
-            .then((res) => {
-              if (!res.ok) {
-                throw new Error(`HTTP error! Status: ${res.status}`);
-              }
-              return res.json();
-            })
-            .then((data) => {
-              console.log("API Response:", data);
-            })
-            .catch((error) => console.error("Fetch error:", error));
-              setError(error.message);
+              .then((res) => {
+                if (!res.ok) {
+                  throw new Error(`HTTP error! Status: ${res.status}`);
+                }
+                return res.json();
+              })
+              .then((data) => {
+                if (!data) {
+                  throw new Error("Received null or undefined response from API");
+                }
+                console.log("API Response:", data);
+              })
+              .catch((error) => {
+                console.error("Fetch error:", error);
+              });
           } finally {
               setLoading(false);
           }
