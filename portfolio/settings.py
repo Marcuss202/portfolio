@@ -22,6 +22,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://ozolsmarkuss.netlify.app",
+    "localhost"
 ]
 
 # Quick-start development settings - unsuitable for production
@@ -31,9 +32,9 @@ CORS_ALLOWED_ORIGINS = [
 SECRET_KEY = 'django-insecure-g9v0!u2jt==t)+wy#bsx_5e0ycl5(z9(lns21ux8c=43l)(@#1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://ozolsmarkuss.netlify.app", "localhost"]
 
 
 # Application definition
