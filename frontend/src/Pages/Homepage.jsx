@@ -29,10 +29,10 @@ function Homepage() {
             const sortedData = data.sort((a, b) => a.orderNumber - b.orderNumber);
             setExperiences(sortedData);
           } catch (error) {
-            console.error('There was a problem with the fetch operation:', error);
-            setError(error.message);
+              console.error('There was a problem with the fetch operation:', error);
+              setError(error.message);
           } finally {
-            setLoading(false);
+              setLoading(false);
           }
         };
 
@@ -51,10 +51,10 @@ function Homepage() {
             const sortedData = data.sort((a, b) => a.id - b.id);
             setSkills(sortedData);
           } catch (error) {
-            console.error('There was a problem with the fetch operation:', error);
-            setError(error.message);
+              console.error('There was a problem with the fetch operation:', error);
+              setError(error.message);
           } finally {
-            setLoading(false);
+              setLoading(false);
           }
         };
     
