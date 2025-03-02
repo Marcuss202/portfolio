@@ -19,7 +19,6 @@ function Homepage() {
             const response = await fetch(`${import.meta.env.VITE_API_URL}/ExperienceMap/`)
                                       .then((res) => res.json())
                                       .then((data) => console.log("API Response:", data))
-                                      .then((res) => console.log(res))
                                       .catch((error) => console.error("Fetch error:", error));
           
             if (!response.ok) {
@@ -42,7 +41,6 @@ function Homepage() {
             const response = await fetch(`${import.meta.env.VITE_API_URL}/ProgrammingSkills/`)
                                         .then((res) => res.json())
                                         .then((data) => console.log("API Response:", data))
-                                        .then((res) => console.log(res))
                                         .catch((error) => console.error("Fetch error:", error));
           
             if (!response.ok) {
