@@ -28,12 +28,15 @@ function About() {
                         band. My goal is to keep learning and improving, always striving to
                         make cool and useful projects.
                     </p>
-                    <a href="/contacts/" className="btn mainButton mt-3">
-                        Contact Me
-                    </a>
-                    <a href="https://youtu.be/uPmh06cOK-4" className="btn mt-3 pl-3 LaumasButton">
-                        LAUMAS PRESENT
-                    </a>
+                        <div className="d-block">
+                            <a href="/contacts/" className="btn mainButton mt-3">
+                                Contact Me
+                            </a>
+                        </div>
+                            <a href="https://youtu.be/uPmh06cOK-4" className="btn mt-3 LaumasButton">
+                                LAUMAS PRESENT
+                            </a>
+                        
                     </div>
                 </div>
             </div>
