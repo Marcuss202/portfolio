@@ -46,6 +46,16 @@ button {
   font-family: JetBrains Mono, sans-serif !important;
 }
 
+.LaumasButton {
+  background-color: #c70818 !important;
+  color: white !important;
+  font-family: JetBrains Mono, sans-serif !important;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s, font-weight 0.3s;
+}
+
 .mainButton:hover {
   background-color:#264cb4 !important;
   font-weight: bold;
