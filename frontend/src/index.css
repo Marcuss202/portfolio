@@ -56,6 +56,11 @@ button {
   transition: background-color 0.3s, font-weight 0.3s;
 }
 
+.LaumasButton:hover {
+  background-color: #a10614 !important;
+  font-weight: bold;
+}
+
 .mainButton:hover {
   background-color:#264cb4 !important;
   font-weight: bold;
