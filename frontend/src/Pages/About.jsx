@@ -31,6 +31,9 @@ function About() {
                     <a href="/contacts/" className="btn mainButton mt-3">
                         Contact Me
                     </a>
+                    <a href="/contacts/" className="btn mainButton mt-3">
+                        LAUMAS PRESENT
+                    </a>
                     </div>
                 </div>
             </div>
